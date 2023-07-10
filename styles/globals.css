@@ -4,7 +4,19 @@
 
 @font-face {
 	font-family: "Jakarta Sans";
-	src: url("../public/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+	src: url("../public/fonts/PlusJakartaSans-Regular.ttf");
+}
+@font-face {
+	font-family: "Jakarta Sans Medium";
+	src: url("../public/fonts/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+	font-family: "Jakarta Sans Bold";
+	src: url("../public/fonts/PlusJakartaSans-Bold.ttf");
+}
+@font-face {
+	font-family: "Jakarta Sans Extra Bold";
+	src: url("../public/fonts/PlusJakartaSans-ExtraBold.ttf");
 }
 @font-face {
 	font-family: "Jakarta Sans Italic";
@@ -29,7 +41,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-end-rgb);
 	font-family: 'Jakarta Sans';
-	font-size: 14px;
+	font-size: 16px;
 }
 /*
 body {
@@ -112,4 +124,10 @@ input:checked + label svg.sun {
 }
 input:checked + label svg.moon {
 	fill:#fff;
+}
+
+/*logo no h1 @TODO animar */
+.asset-header {
+	top: 0;
+	right: 215px;
 }

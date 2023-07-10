@@ -28,7 +28,7 @@ export default function Header() {
           />
           </a>
         </div>
-		    <div className='grid-cols-2 w-24'>
+		    <div className='grid-cols-2 w-24 flex items-center '>
           <input type="checkbox" id="darkmode-toggle"/>
           <label htmlFor="darkmode-toggle">
             <svg version="1.1" className="sun" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 496 496" style={style1} >
