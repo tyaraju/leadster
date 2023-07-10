@@ -20,7 +20,8 @@ module.exports = {
       },
       colors: {
         'blue-primary': '#2C83FB',
-        'blue-secondary': '#F0F8FF'
+        'blue-secondary': '#F0F8FF',
+        'copy-default': '#2c3e50'
       },
       fontFamily: {
         'JakartaSans': ['Jakarta Sans'],

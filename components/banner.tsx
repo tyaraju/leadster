@@ -11,14 +11,10 @@ export default function Banner() {
             </div>
           </div>
           <div className="col-xl-12 col-lg-12">
-            <h2 className="text-[47px] font-JakartaSansMedium pt-[12px]">
-             Menos Conversinha,
-            </h2>
+            <h2 className="text-[47px] font-JakartaSansMedium pt-[12px]">Menos Conversinha,</h2>
           </div>
           <div className="col-xl-12 col-lg-12 relative">
-            <h1 className="text-blue-primary text-[87px] font-JakartaSansBold leading-[5rem]">
-              Mais Conversão
-            </h1>
+            <h1 className="text-blue-primary text-[87px] font-JakartaSansBold leading-[5rem]">Mais Conversão</h1>
             <Image
               src="/images/asset-header.png"
               alt="Leadster Asset"
