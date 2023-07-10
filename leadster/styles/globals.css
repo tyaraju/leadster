@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: "Jakarta Sans";
+	src: url("../public/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+@font-face {
+	font-family: "Jakarta Sans Italic";
+	src: url("../public/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,6 +28,8 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-end-rgb);
+	font-family: 'Jakarta Sans';
+	font-size: 14px;
 }
 /*
 body {

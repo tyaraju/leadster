@@ -10,10 +10,10 @@ const style2:React.CSSProperties = {
 };
 export default function Header() {
   return (
-    <header className="w-full fixed">
-      <div className="z-10 w-full justify-items-stretch justify-between lg:flex">
-        <div className='grid-cols-2'></div>
-        <div className="grid-cols-8 bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+    <header className="w-full">
+      <div className="z-10 w-full py-[42px] justify-items-stretch justify-between lg:flex">
+        <div className='grid-cols-2 w-24'></div>
+        <div className="grid-cols-8 flex w-full justify-center bg-white dark:bg-black lg:static">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://leadster.com.br"
@@ -28,7 +28,7 @@ export default function Header() {
           />
           </a>
         </div>
-		    <div className='grid-cols-2'>
+		    <div className='grid-cols-2 w-24'>
           <input type="checkbox" id="darkmode-toggle"/>
           <label htmlFor="darkmode-toggle">
             <svg version="1.1" className="sun" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 496 496" style={style1} >

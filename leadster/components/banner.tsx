@@ -5,10 +5,25 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Banner() {
   return (
-    <section className="payment_features_area pb-0 bg_background_claro">
-      <div className="container-fluid maxw_1400 px-0">
-        <div className="d-flex align-items-center justify-content-center flex-column-reverse flex-xl-row flex-wrap">
-          <div className="col-xl-6 col-lg-8 px-2">
+    <section className="py-[160px] w-full">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center">
+        <div className="d-flex align-items-center justify-content-center grid justify-items-stretch">
+          <div className="col-xl-4 col-lg-4 px-2 justify-self-auto flex justify-center gap-x-6">
+            <div className="buttonWebinars text-blue-primary border-2 border-blue-primary rounded-r-large rounded-tl-large font-JakartaSans font-bold justify-items-center px-[5px] py-[18px]">
+              WEBINARS EXCLUSIVOS
+            </div>
+          </div>
+          <div className="col-xl-12 col-lg-12 px-2">
+            <h2 className="f_size_28em f_700 color_padrao_textos">
+             Menos Conversinha
+            </h2>
+          </div>
+          <div className="col-xl-12 col-lg-12 px-2">
+            <h1 className="f_size_28em f_700 color_padrao_textos">
+              Mais Conversão
+            </h1>
+          </div>
+          <div className="col-xl-12 col-lg-12 px-2">
             <h1 className="f_size_28em f_700 color_padrao_textos">
               Marketing Conversacional: <span className="span_f_size_sm f_600">O Futuro da Geração de <span className="_home_underlined_blue__peSeb lozad" data-loaded="true">Leads</span></span>
             </h1>
