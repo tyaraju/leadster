@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ContentBanner() {
   return (
-    <section className="pt-[49px] pb-[105px] w-full bg-blue-secondary">
+    <section className="pt-[49px] w-full bg-blue-secondary">
       <div className="container mx-auto max-w-8xl">
         <div className="flex items-start justify-between content-start flex-row-reverse flex-wrap px-7">
           <div className="col-lg-6 pt-[170px] basis-1/2 pl-[90px]">
