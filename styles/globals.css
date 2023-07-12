@@ -148,16 +148,22 @@ button:hover {
 	border: none!important;
 	border-radius: 15px!important;
 }
+.box_video:hover .title_video {
+	color: #2C83FB;
+}
+.box_video:hover .title_video {
+	color: #2C83FB;
+}
 
-.buttonPages button {
+.button_pages button {
 	color: #2c3e50;
 	border-radius: 8px!important;
 }
-.buttonPages button:hover {
+.button_pages button:hover {
 	transition: all .3s linear;
 	color: #2C83FB;
 }
-.buttonPages button:disabled{
+.button_pages button:disabled{
 	border: 1px solid #2C83FB;
 	color: #2c3e50;
 }
