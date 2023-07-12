@@ -115,7 +115,52 @@ input:checked + label svg.sun {
 input:checked + label svg.moon {
 	fill:#fff;
 }
+.button_videos {
+	box-shadow: 0 1px 1px 0 rgba(12,0,46,.1);
+	background: #fff;
+	display: inline-block;
+	padding: 7px 20px;
+	color: #2c3e50;
+	border-radius: 45px;
+	border: 1px solid #2c3e50;
+	transition: all .3s linear;
+	margin-right: 12px;
+}
+button:hover {
+	text-decoration: none;
+	outline: none;
+}
+.button_videos:hover {
+	background-color: #FFF;
+	border: 1px solid #2C83FB;
+	box-shadow: none;
+	color: #2C83FB;
+	transition: all .3s linear;
+}
+.button_videos.active {
+	background-color: #2C83FB;
+	border: 1px solid #2C83FB;
+	box-shadow: none;
+	color: #FFF;
+}
+.box_video {
+	box-shadow: 0px 10px 19px 4px rgba(28,43,76,.05);
+	border: none!important;
+	border-radius: 15px!important;
+}
 
+.buttonPages button {
+	color: #2c3e50;
+	border-radius: 8px!important;
+}
+.buttonPages button:hover {
+	transition: all .3s linear;
+	color: #2C83FB;
+}
+.buttonPages button:disabled{
+	border: 1px solid #2C83FB;
+	color: #2c3e50;
+}
 /*logo no h1 @TODO animar */
 .asset-header {
 	top: 0;

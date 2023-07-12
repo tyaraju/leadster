@@ -6,9 +6,9 @@ export default function ContentBanner() {
       <div className="container mx-auto max-w-8xl">
         <div className="flex items-start justify-between content-start flex-row-reverse flex-wrap px-7">
           <div className="col-lg-6 pt-[170px] basis-1/2 pl-[90px]">
-            <h2 className="text-[41px] px-1 font-JakartaSansMedium pt-[11px] leading-[2.5rem] color-copy-default">Pronto para triplicar sua</h2>
-            <h3 className="text-[42px] px-1 font-JakartaSansBold pt-[8px] leading-[3rem] mb-[11px] color-copy-default">Geração de Leads?</h3>
-            <p className="px-1 mb-4 font-JakartaSansMedium text-[23px] color-copy-default">Criação e ativação em <span className="font-JakartaSansExtraBold">4 minutos</span></p>
+            <h2 className="text-[41px] px-1 font-JakartaSansMedium pt-[11px] leading-[2.5rem] text-copy-default">Pronto para triplicar sua</h2>
+            <h3 className="text-[42px] px-1 font-JakartaSansBold pt-[8px] leading-[3rem] mb-[11px] text-copy-default">Geração de Leads?</h3>
+            <p className="px-1 mb-4 font-JakartaSansMedium text-[23px] text-copy-default">Criação e ativação em <span className="font-JakartaSansExtraBold">4 minutos</span></p>
             <div className="col-xl-12 col-lg-12">
               <hr className="h-0.5 mt-5 mb-6 bg-[#C8D4DD] border-0 dark:bg-gray-700" />
             </div>
