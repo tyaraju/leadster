@@ -11,7 +11,7 @@ const style2:React.CSSProperties = {
 export default function Header() {
   return (
     <header className="w-full">
-      <div className="z-10 w-full py-[42px] flex-nowrap justify-between flex">
+      <div className="z-10 w-full py-[10px] sm:py-[20px] lg:py-[42px] flex-nowrap justify-between flex">
         <div className='grid-cols-2 w-12 sm:w-24 h-1'></div>
         <div className="grid-cols-8 flex justify-center bg-white dark:bg-black">
           <a

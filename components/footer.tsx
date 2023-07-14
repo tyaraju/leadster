@@ -104,12 +104,12 @@ export default function Footer() {
         <hr className="h-0.5 mt-5 mb-8 bg-[#F2F4F8] border-0 dark:bg-gray-700" />
       </div>
       <div className="container mx-auto max-w-7xl">
-        <div className="flex flex-row px-14 justify-between pt-[3px] text-[14px]">
-          <div className="grid-cols-6 basis-1/2">
-            <p className="">Copyright © 2015 - 2022 Todos os direitos reservados | <a href="https://leadster.com.br/" className='text-blue-primary'>Leadster</a></p>
+        <div className="px-14 justify-between pt-[3px] text-[14px] grid grid-cols-1 lg:grid-cols-2">
+          <div className="">
+            <p className="text-center lg:text-left">Copyright © 2015 - 2022 Todos os direitos reservados | <a href="https://leadster.com.br/" className='text-blue-primary'>Leadster</a></p>
           </div>
-          <div className="grid-cols-6 basis-1/2">
-            <ul className="list-unstyled f_menu text-right">
+          <div className="">
+            <ul className="text-center lg:text-right">
               <li>Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | <a href="https://leadster.com.br/termos_de_uso/">Termos de uso</a>
               </li>
             </ul>

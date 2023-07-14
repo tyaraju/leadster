@@ -115,7 +115,7 @@ const ContentVideos = (props) => {
     const botoes = categories.map((category,index) => (
       <button
         type='button'
-        className={`button_videos mb-2 lg:mb-0 lg:mr-[12px] md:self-center min-w-[187px] lg:min-w-fit  font-JakartaSansBold ${(category === selectedCategory) ? ' active' : ''}`}
+        className={`button_videos mb-2 lg:mb-0 lg:mr-[12px] md:self-center min-w-[187px] md:min-w-max  font-JakartaSansBold ${(category === selectedCategory) ? ' active' : ''}`}
         key={index}
         onClick={() => setCategories(category)}
       >
@@ -126,16 +126,14 @@ const ContentVideos = (props) => {
   };
   
   return (
-    <section className="pt-[92px] pb-[109px] w-full">
-      <div className="mx-auto max-w-6xl py-lg-5 px-4 sm:px-5 lg:px-1.5 pb-[30px] text-center">
+    <section className="pt-[40px] lg:pt-[92px] pb-[20px] lg:pb-[109px] w-full">
+      <div className="mx-auto max-w-6xl py-lg-5 px-8 sm:px-5 lg:px-1.5 pb-[30px] text-center">
         <div className="grid justify-items-stretch py-lg-2">
           <div className='menuVideos'>
-            <div className="flex md:flex-row flex-col">
-              <div className="lg:grid-cols-8 md:grid-cols-6 lg:basis-2/3 md:basis-1/2 flex justify-start flex-col lg:flex-row md:flex-col">
+            <div className="">
+              <div className="flex justify-center md:justify-between flex-wrap lg:flex-nowrap ">
                 {setCategoriesPage()}
-              </div>
-              <div className="lg:grid-cols-4 md:grid-cols-6 lg:basis-1/3 md:basis-1/2 flex flex-row justify-end ">
-                <div className="flex flex-row justify-end">
+                <div className="lg:basis-2/6 flex flex-row justify-end">
                   <span className='font-JakartaSansExtraBold py-[6px] justify-self-start text-[15px] pr-[14px]'>Ordernar por</span>
                   <div className="min-w-[190px] ">
                     <div className="buttonSelect border divide-solid border-[#2c3e50] rounded-xl px-[8px] py-[5px]">
