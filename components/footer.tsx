@@ -19,8 +19,8 @@ export default function Footer() {
           </a>
           <p className="mb-[40px] pt-[3px] text-[15px]">Transformando visitantes em clientes.</p>
         </div>
-        <div className="flex flex-row px-14 justify-between pt-[3px] pb-[43px]">
-          <div className="grid-cols-3 basis-1/4 md:min-w-[300px]">
+        <div className="grid  flex-col sm:flex-row px-14 justify-between pt-[3px] pb-[43px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="lg:min-w-[300px]">
             <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[43px]">Links Principais</p>
             <ul className="">
               <li>
@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="grid-cols-3 basis-1/4 md:min-w-[300px]">
+          <div className="lg:min-w-[300px]">
             <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[43px]">Cases</p>
             <ul>
               <li>
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="grid-cols-3 basis-1/4 md:min-w-[300px]">
+          <div className="lg:min-w-[300px]">
             <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[43px]">Materiais</p>
             <ul>
               <li>
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="grid-cols-3 basis-1/4">
+          <div className="">
             <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[22px]">Siga a Leadster</p>
             <div className="f_social_icon flex flex-row mb-[27px]">
               <a target="_blank" className='linkedin' href="https://www.linkedin.com/company/leadster-platform/">
