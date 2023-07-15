@@ -5,23 +5,23 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Footer() {
   return (
-    <footer className="pt-[49px] w-full">
+    <footer className="pt-[49px] w-full  bg-white dark:bg-dark-black">
       <div className="container mx-auto max-w-7xl">
         <div className="flex justify-center flex-col text-center">
           <a href="https://leadster.com.br/" className='text-center '>
             <Image
               src="/images/leadster_270.gif"
               alt="Leadster Logo"
-              className="dark:invert text-center mx-auto"
+              className="invertImage text-center mx-auto"
               width={270}
               height={62}
             />
           </a>
-          <p className="mb-[40px] pt-[3px] text-[15px]">Transformando visitantes em clientes.</p>
+          <p className="mb-[40px] pt-[3px] text-[15px] text-copy-default dark:text-white">Transformando visitantes em clientes.</p>
         </div>
         <div className="grid  flex-col sm:flex-row px-14 justify-between pt-[3px] pb-[43px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:min-w-[300px]">
-            <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[43px]">Links Principais</p>
+            <p className="text-copy-default dark:text-white font-JakartaSansBold text-[18px] mb-[43px]">Links Principais</p>
             <ul className="">
               <li>
                 <a href="https://leadster.com.br/">Home</a>
@@ -38,7 +38,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="lg:min-w-[300px]">
-            <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[43px]">Cases</p>
+            <p className="text-copy-default dark:text-white font-JakartaSansBold text-[18px] mb-[43px]">Cases</p>
             <ul>
               <li>
                 <a href="https://leadster.com.br/">Geração de Leads B2B</a>
@@ -55,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="lg:min-w-[300px]">
-            <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[43px]">Materiais</p>
+            <p className="text-copy-default dark:text-white font-JakartaSansBold text-[18px] mb-[43px]">Materiais</p>
             <ul>
               <li>
                 <a href="https://leadster.com.br/">Blog</a>
@@ -72,7 +72,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="">
-            <p className="text-copy-default font-JakartaSansBold text-[18px] mb-[22px]">Siga a Leadster</p>
+            <p className="text-copy-default dark:text-white font-JakartaSansBold text-[18px] mb-[22px]">Siga a Leadster</p>
             <div className="f_social_icon flex flex-row mb-[27px]">
               <a target="_blank" className='linkedin' href="https://www.linkedin.com/company/leadster-platform/">
                 <svg stroke="currentColor" fill="currentColor" viewBox="0 0 448 512" height="14px" width="14px" xmlns="http://www.w3.org/2000/svg">
@@ -94,8 +94,8 @@ export default function Footer() {
               </a>
             </div>
             <div className="widget-wrap mt-2">
-              <p className="text-copy-default font-JakartaSans text-[15px] mb-[11px]">Email: <a href='mailto:contato@leadster.com.br' className=''>contato@leadster.com.br</a></p>
-              <p className="text-copy-default font-JakartaSans text-[15px]">Telefone: <a href='tel:+55(0)42-98828-9851' className=''>(42) 98828-9851</a></p>
+              <p className="text-copy-default dark:text-white font-JakartaSans text-[15px] mb-[11px]">Email: <a href='mailto:contato@leadster.com.br' className=''>contato@leadster.com.br</a></p>
+              <p className="text-copy-default dark:text-white font-JakartaSans text-[15px]">Telefone: <a href='tel:+55(0)42-98828-9851' className=''>(42) 98828-9851</a></p>
             </div>
           </div>
         </div>
@@ -104,15 +104,12 @@ export default function Footer() {
         <hr className="h-0.5 mt-5 mb-8 bg-[#F2F4F8] border-0 dark:bg-gray-700" />
       </div>
       <div className="container mx-auto max-w-7xl">
-        <div className="px-14 justify-between pt-[3px] text-[14px] grid grid-cols-1 lg:grid-cols-2">
+        <div className="px-14 justify-between pt-[3px] pb-[30px] text-[14px] grid grid-cols-1 lg:grid-cols-2">
           <div className="">
-            <p className="text-center lg:text-left">Copyright © 2015 - 2022 Todos os direitos reservados | <a href="https://leadster.com.br/" className='text-blue-primary'>Leadster</a></p>
+            <p className="text-center lg:text-left text-copy-default dark:text-white">Copyright © 2015 - 2022 Todos os direitos reservados | <a href="https://leadster.com.br/" className='text-blue-primary'>Leadster</a></p>
           </div>
           <div className="">
-            <ul className="text-center lg:text-right">
-              <li>Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | <a href="https://leadster.com.br/termos_de_uso/">Termos de uso</a>
-              </li>
-            </ul>
+            <p className="text-center lg:text-right text-copy-default dark:text-white">Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 | <a href="https://leadster.com.br/termos_de_uso/" className='text-blue-primary'>Termos de uso</a></p>
           </div>
         </div>
       </div>

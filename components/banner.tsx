@@ -11,7 +11,7 @@ export default function Banner() {
             </div>
           </div>
           <div className="">
-            <h2 className="text-[32px] sm:text-[47px] font-JakartaSansMedium pt-[12px]">Menos Conversinha,</h2>
+            <h2 className="text-[32px] sm:text-[47px] font-JakartaSansMedium pt-[12px] text-copy-default">Menos Conversinha,</h2>
           </div>
           <div className="relative flex justify-center">
             <h1 className="title-banner text-blue-primary relative text-[47px] sm:text-[87px] font-JakartaSansBold leading-[3rem] sm:leading-[5rem]">
@@ -19,7 +19,7 @@ export default function Banner() {
               <Image
                 src="/images/asset-header.png"
                 alt="Leadster Asset"
-                className="asset-header absolute dark:invert"
+                className="asset-header absolute invertImage"
                 width={49}
                 height={32}
               />
@@ -30,7 +30,7 @@ export default function Banner() {
           <div className="lg:mx-40">
            <hr className="h-px mt-8 mb-4 bg-[#C8D4DD] border-0 dark:bg-gray-700 lg:mx-10" />
           </div>
-          <div className="font-JakartaSansMedium text-base sm:text-lg">
+          <div className="font-JakartaSansMedium text-base sm:text-lg text-copy-default">
             Conheça as estratégias que <span className="font-JakartaSansExtraBold">mudaram o jogo</span> e como aplicá-las no seu negócio
           </div>
     

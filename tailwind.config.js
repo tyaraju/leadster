@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
@@ -21,7 +22,8 @@ module.exports = {
       colors: {
         'blue-primary': '#2C83FB',
         'blue-secondary': '#F0F8FF',
-        'copy-default': '#2c3e50'
+        'copy-default': '#2c3e50',
+        'dark-black': '#252e36'
       },
       fontFamily: {
         'JakartaSans': ['Jakarta Sans'],

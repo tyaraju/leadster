@@ -43,6 +43,7 @@ body {
 	font-family: 'Jakarta Sans';
 	font-size: 16px;
 }
+/* toggle dark mode */
 label {
 	width:40px;
 	height:20px;
@@ -115,14 +116,45 @@ input:checked + label svg.sun {
 input:checked + label svg.moon {
 	fill:#fff;
 }
+/* end toggle dark mode */
+.dark .invertImage{
+	filter: invert(1) hue-rotate(180deg);
+}
+/* Header style */
+header.slide-in {
+	height: 70px;
+  animation: slideIn 0.5s ease-in;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+header.fixed {
+  position: fixed;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header.fixed .logo {
+  max-width: 200px;
+  max-height: 60px;
+  transition: all 0.3s ease;
+}
+header.fixed .p-header {
+	padding-top: 0 !important;;
+	padding-bottom: 0 !important;
+}
+/* end Header style */
 .button_videos {
 	box-shadow: 0 1px 1px 0 rgba(12,0,46,.1);
-	background: #fff;
 	display: inline-block;
 	padding: 7px 20px;
-	color: #2c3e50;
 	border-radius: 45px;
-	border: 1px solid #2c3e50;
 	transition: all .3s linear;
 }
 button:hover {
@@ -141,6 +173,15 @@ button:hover {
 	border: 1px solid #2C83FB;
 	box-shadow: none;
 	color: #FFF;
+}
+.buttons-select {
+	/*border-radius: 45px;*/
+}
+.buttons-select:hover {
+	background-color: #FFF;
+	box-shadow: none;
+	color: #2C83FB;
+	transition: all .3s linear;
 }
 .box_video {
 	box-shadow: 0px 10px 19px 4px rgba(28,43,76,.05);
@@ -164,7 +205,6 @@ button:hover {
 	transition: all .3s linear;
 }
 .button_pages button {
-	color: #2c3e50;
 	border-radius: 8px!important;
 }
 .button_pages button:hover {
@@ -173,7 +213,6 @@ button:hover {
 }
 .button_pages button:disabled{
 	border: 1px solid #2C83FB;
-	color: #2c3e50;
 }
 /*logo no h1 @TODO animar */
 

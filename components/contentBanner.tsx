@@ -20,7 +20,7 @@ export default function ContentBanner() {
                 <Image
                   src="/images/selo_RD.png"
                   alt="RD Logo"
-                  className="dark:invert"
+                  className="invertImage"
                   width={205}
                   height={73}
                 />
@@ -31,21 +31,21 @@ export default function ContentBanner() {
                 <Image
                   src="/images/no-card-dark.webp"
                   alt="Não é necessário Cartão de Crédito"
-                  className="dark:invert align-middle"
+                  className="align-middle"
                   width={16}
                   height={16}
                 />
-                <p className="px-1 font-JakartaSansBold text-[15px]"><span className="font-JakartaSansExtraBold">Não</span> é necessário Cartão de Crédito |</p>
+                <p className="px-1 font-JakartaSansBold text-[15px] text-copy-default"><span className="font-JakartaSansExtraBold">Não</span> é necessário Cartão de Crédito |</p>
               </div>
               <div className='flex items-center'>
                 <Image
                   src="/images/rating.webp"
                   alt="4.9/5 Estrelas"
-                  className="dark:invert align-middle"
+                  className="align-middle"
                   width={92}
                   height={16}
                 />
-                <p className="px-1 font-JakartaSansBold text-[15px]"><span className="font-JakartaSansExtraBold">4.9</span>/5 média de satisfação</p>
+                <p className="px-1 font-JakartaSansBold text-[15px] text-copy-default"><span className="font-JakartaSansExtraBold">4.9</span>/5 média de satisfação</p>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function ContentBanner() {
             <Image
               src="/images/comparativo_img_CTA.png"
               alt="Leadster Logo"
-              className="dark:invert"
+              className="invertImage"
               width={739}
               height={666}
               loading="lazy"
