@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useState,useEffect, SetStateAction, FunctionComponent } from 'react'
 
 async function getVideos() {
-
+console.log(${process.env.NEXT_PUBLIC_API_URL})
   let response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/videos.json`,{
     headers : { 
       'Content-Type': 'application/json',
