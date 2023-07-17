@@ -318,20 +318,17 @@ footer a:hover {
   height:100%;
   width:100%;
   border-radius: 15px;
-  padding: 15px;
+		z-index: 1000;
+		
 }
 
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+.modal-content {
+	overflow-y: auto;
+	max-height: calc(100vh - 20px);
+	transform: translate(0%, -50%);
+    top: 50%;
 }
+
 
 .modal-body {
   padding-top: 10px;

@@ -15,6 +15,7 @@ export default function Footer() {
               className="invertImage text-center mx-auto"
               width={270}
               height={62}
+              loading="lazy"
             />
           </a>
           <p className="mb-[40px] pt-[3px] text-[15px] text-copy-default dark:text-white">Transformando visitantes em clientes.</p>

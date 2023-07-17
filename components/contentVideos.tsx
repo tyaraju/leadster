@@ -1,6 +1,7 @@
 import useModal from '@/hooks/useModal';
+import { NextPage } from 'next';
 import Image from 'next/image'
-import { useState,useEffect, } from 'react'
+import React, { useState,useEffect, SetStateAction, FunctionComponent } from 'react'
 
 async function getVideos() {
   let response = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/videos.json`,{
@@ -12,7 +13,19 @@ async function getVideos() {
   let data = await response.json()
   return data;
 }
-const ContentVideos = (props) => {
+interface PostProps {
+  setContentModal: {
+    title: string;
+    description: string;
+    url: string;
+    spreadsheet: string;
+    document: string;
+    presentation: string;
+    zipfile: string;
+  },
+  toggleModal: boolean;
+}
+const ContentVideos : FunctionComponent<PostProps> = ({ setContentModal, toggleModal = {} }) => {
   const  [videos, setVideos] = useState([])
   
   useEffect(() => {
@@ -24,12 +37,12 @@ const ContentVideos = (props) => {
   },[])
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = React.useState<string | null>(); 
   const [openSelect, setOpenSelect] = useState(false);
   const resultsPage = 9;
   const firstResult = (currentPage - 1) * resultsPage;
   const finalResult = currentPage * resultsPage;
-  const filterData = selectedCategory ? videos.filter((result) => result.type === selectedCategory) : videos;
+  const filterData = selectedCategory ? videos.filter((result) => result['type'] === selectedCategory) : videos;
   const orderArray = ['Data de Publicação', 'Nome', 'Duração'];
   const orderAliasArray = ['publicacao', 'title', 'duration'];
   const [selectedNameOrder, setSelectedNameOrder] = useState(orderArray[0]);
@@ -39,11 +52,15 @@ const ContentVideos = (props) => {
   // Ordenar os dados com base na opção de ordenação selecionada
   const dadosOrdenados = filterData.sort((a, b) => {
       if (selectedAliasOrder === 'publicacao') {
-        return new Date(a.publicacao).getTime() - new Date(b.publicacao).getTime();
+        return new Date(a['publicacao']).getTime() - new Date(b['publicacao']).getTime();
       } else if (selectedAliasOrder === 'duration') {
-        return a.duration.localeCompare(b.duration);
+        let string1 = ''+a['duration'];
+        let string2 = ''+b['duration'];
+        return string1.localeCompare(string2);
       } else if (selectedAliasOrder === 'title') {
-        return a.title.localeCompare(b.title);
+        let string1 = ''+a['title'];
+        let string2 = ''+b['title'];
+        return string1.localeCompare(string2);
       }
     return 0;
   });
@@ -52,10 +69,10 @@ const ContentVideos = (props) => {
   const totalPages = Math.ceil(dadosOrdenados.length / resultsPage);
   
   
-  const changePage = (newPage) => {
+  const changePage = (newPage: SetStateAction<number>) => {
     setCurrentPage(newPage);
   };
-  const changeOrder = (newOrder) => {    
+  const changeOrder = (newOrder: SetStateAction<string>) => {    
     setSelectedAliasOrder(newOrder)
     setOpenSelect(false)
     setCurrentPage(1);
@@ -157,8 +174,8 @@ const ContentVideos = (props) => {
         <div className="justify-items-center md:justify-between gap-x-4 gap-y-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {pageResults.map((resultado, index) => {
             return  <div className="box_video max-w-[360px]" key={index} onClick={()=> {
-              props.setContentModal(resultado);
-              props.toggleModal()
+              setContentModal(resultado);
+              toggleModal()
               }}>
                       
                       <div className="thumb_video rounded-t-[20px] overflow-hidden relative">
