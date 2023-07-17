@@ -5,7 +5,7 @@ import React, { useState,useEffect, SetStateAction, FunctionComponent } from 're
 
 async function getVideos() {
 
-  let response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/videos.json`,{
+  let response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/videos.json`,{
     headers : { 
       'Content-Type': 'application/json',
       'Accept': 'application/json'
