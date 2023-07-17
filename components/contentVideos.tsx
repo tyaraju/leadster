@@ -4,8 +4,7 @@ import Image from 'next/image'
 import React, { useState,useEffect, SetStateAction, FunctionComponent } from 'react'
 
 async function getVideos() {
-
-  let response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/videos.json`,{
+  let response = await fetch(`https://leadster-m1byt9b43-tyaraju.vercel.app/api/videos.json`,{
     headers : { 
       'Content-Type': 'application/json',
       'Accept': 'application/json'
