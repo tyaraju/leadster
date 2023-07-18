@@ -4,7 +4,8 @@
     <img alt="Next.js" src="public/images/leadster_270.gif">
   </a>
 </h1>
-<h2 align="center" style="padding-bottom: 10px;">Este é um teste para a vaga de desenvolvedor Front-end para a [Leadster](https://leadster.com.br)</h2>
+<h2 align="center" style="padding-bottom: 10px;">Este é um teste para a vaga de desenvolvedor Front-end para a <a href="https://leadster.com.br">Leadster</a></h2>
+
 <p align="center">
 
   <a href="https://nextjs.org">
@@ -21,7 +22,7 @@
   </a>
   
   <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
-  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffacebook%2Fdocusaurus%2Ftree%2Fmain%2Fexamples%2Fclassic&project-name=my-docusaurus-site&repo-name=my-docusaurus-site"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+  <a href="https://vercel.com/new/clone?repository-url=https://github.com/tyaraju/leadster"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
   
 </p>
 <p align="center" style="padding-top: 15px;">O projeto...<p>
@@ -30,11 +31,14 @@
   <a href="#tecnologias">Tecnologias</a> · 
   <a href="#pre-requisitos">Pré-requisitos</a> · 
   <a href="#install">Instalação</a> · 
+  <a href="#test">Test Jest</a> · 
   <a href="#autor">Autor</a>
 <p>
 <hr />
 <h3 id="sobre">Sobre</h3>
 <p>Este projeto foi desenvolvido em Next.js, e usa um arquivo json para listar os vídeos que são exibidos na modal.</p> 
+<p>link Vercel: https://leadster-seven.vercel.app</p>
+
 <p>Este arquivo json tem algumas configurações básicas para o bom funcionamento do projeto, como:</p>
 <ul>
 <li>Title: Título do vídeo</li>
@@ -103,14 +107,14 @@
 
 <h3 id="install">🔨 Instalação</h3>
 <p>Primeiramente verifique as versões de NPM e node. </p>
-<p>Depois rode o npm install</p>
+<p>Depois rode o 'npm install'</p>
 
 ```bash
 npm install
 ```
 
-<p>O projeto deve funcionar se as versões estiverem corretas. Caso não rode de primeira, delete a pasta node_modules e o arquivo `package-lock.json` e rode novamente o npm install. Se ainda apresentar problemas, entre em contato com o autor.</p>
-<p>Depois de rodar tudo certo, podemos rodar o comando npm run dev</p>
+<p>O projeto deve funcionar se as versões estiverem corretas. Caso não rode de primeira, delete a pasta node_modules e o arquivo `package-lock.json` e rode novamente o 'npm install'. Se ainda apresentar problemas, entre em contato com o autor.</p>
+<p>Depois de rodar tudo certo, podemos rodar o comando 'npm run dev'</p>
 
 
 ```bash
@@ -120,6 +124,16 @@ npm run dev
 <p>Abra o endereço <a href="http://localhost:3000">http://localhost:3000</a> no seu browser.</p>
 <p></p>
 
+<h3 id="autor">Autor</h3>
+<p>Teste iniciado com Jest, em desenvolvimento...</p>
+<p>Para testar rodar 'npm test'</p>
+
+
+```bash
+npm test
+```
+
+<p></p>
 
 <h3 id="autor">Autor</h3>
 <p> Desenvolvido por Tyaraju Terra 

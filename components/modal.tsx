@@ -33,7 +33,7 @@ const ModalComponent = (props: ModalType) => {
   return (
     <>
       {props.isOpen && (
-        <div className="modal flex top-0 left-0 w-screen h-screen z-40 justify-center align-center">
+        <div id="modal" className="modal flex top-0 left-0 w-screen h-screen z-40 justify-center align-center">
           <div className="fixed top-0 left-0 w-screen h-screen z-40 bg-neutral-800 opacity-50" onClick={props.toggleModal}></div>
           <div className="modal-content fixed rounded-[18px] flex flex-col z-50 max-w-[600px] flex-col bg-white mx-auto overflow-hidden">
             <div className="bg-blue-primary h-[5px] leading-[5px] absolute top-0 left-0 w-full"></div>

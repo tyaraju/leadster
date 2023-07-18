@@ -8,10 +8,8 @@ import { SetStateAction, useEffect, useState } from 'react'
 import ModalComponent from '@/components/modal'
 import useModal from '@/hooks/useModal'
 import Link from 'next/link'
+import Head from 'next/head'
 
-
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    
 export default function Home() {
   const { isOpen, toggleModal } = useModal();
   const [titleVideo,setTitleVideo] = useState('')
@@ -33,12 +31,9 @@ export default function Home() {
         document.documentElement.classList.remove('dark')
         setDarkmode(false);
     }
-    //checkDarkThemeBrowser ()
   }, [])
 
-  function checkDarkThemeBrowser () {
-  }
-  
+
   const handleDarkmode = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.checked) {
       document.documentElement.classList.add('dark');
@@ -64,7 +59,10 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between`}
     > 
-    
+      <Head> 
+        <title>Leadster: Chatbot de Marketing para Aumentar Geração de Leads</title>
+        <link rel="icon" href="/images/180.png" sizes="any" />
+      </Head>
       <ModalComponent isOpen={isOpen} toggleModal={toggleModal} >
         <div className="titleModal font-JakartaSansBold justify-self-start text-[18px] md:text-[25px] px-[25px] md:px-[70px] pb-[20px]  md:pb-[34px] leading-[28px] text-center text-copy-default">
           <span className='text-blue-primary'>Webinar:</span> {titleVideo}
